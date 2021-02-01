@@ -1,0 +1,26 @@
+/* Sets the text in the middle hor. and ver. */
+#loading-indicator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* makes the loading indicator a circle with the bottom side thinner */
+.start-loading-indicator{
+    border: 10px solid gray;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-bottom: 5px;
+    animation: loading-animation 1s infinite;
+}
+
+/* Animation for the loading indicator */
+@keyframes loading-animation{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
